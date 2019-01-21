@@ -1,0 +1,110 @@
+/* 
+
+write your code here
+
+*/
+
+@media print {
+  div.tm-sidebar, div#about, section[class], section[id] {
+    display: none;
+  }
+  h2.tm-section-title {
+    color: #0000ff;
+  }
+}
+
+div.flex-2-col {
+  display: flex;
+}
+div.flex-item {
+  align-self: center;
+}
+
+li.box:hover {
+  background-color: #87CEFA;
+}
+li.box h2:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+p::first-letter {
+  color: #87CEFA;
+  font-size: 30px;
+  }
+
+.tm-content-box, .tm-sidebar {
+    box-shadow: 0 0 10px;
+}     
+.tm-banner {
+  padding: 0px;
+  border: 30px solid rgba(128, 128, 128, 0.200);
+}
+
+section::before {
+  content: '';
+  border: 30px solid transparent;
+  border-left: 250px solid #87CEFA;
+  border-top: 0px solid #87CEFA;
+}
+
+.carousel-content h2.tm-section-title {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+h2+p {
+  font-style: italic;
+}
+
+h2~p {
+  line-height: 30px;
+  text-indent: 25px;
+}    
+
+.heading a {
+  color: black;
+}
+.heading li:nth-child(-2n+3)::after {
+  content: "New";
+  font-size: 70%;
+  color: red;
+  vertical-align: 40%;
+}
+.heading a:visited {
+  text-decoration: underline;
+}
+.heading a:hover {  
+  color:  #87CEFA;
+  text-decoration-style: double;
+}
+
+section.blocks ul.boxes li {
+  padding: 10px;
+}
+section.blocks ul.boxes li:nth-of-type(even) {
+  background-color: #dddddd;
+}
+  ul.boxes p::first-letter {
+  color: #000000;
+}
+
+input#contact_email {
+  content: "*";
+  color: #ff0000;
+}
+button.submit-btn {
+  background: #ffffff;
+  color: #87CEFA;
+  border: #87CEFA 1px solid;
+  border-radius: 0px;
+  margin-left: 49vw;
+}
+button.submit-btn:hover {
+  background: #87CEFA;
+  border: #87CEFA 1px solid;
+}
+
+.tm-main-nav li:hover {
+  background: rgba(128, 128, 128, 0.200);
+}
