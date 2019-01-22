@@ -5,7 +5,7 @@ write your code here
 */
 
 @media print {
-  div.tm-sidebar, div#about, section[class], section[id] {
+  div.tm-sidebar, div#about, section[class], section[id], section::before {
     display: none;
   }
   h2.tm-section-title {
@@ -89,8 +89,8 @@ section.blocks ul.boxes li:nth-of-type(even) {
   color: #000000;
 }
 
-input#contact_email {
-  content: "*";
+.mandatory-field::after {
+  content: '*';
   color: #ff0000;
 }
 button.submit-btn {
@@ -98,7 +98,8 @@ button.submit-btn {
   color: #87CEFA;
   border: #87CEFA 1px solid;
   border-radius: 0px;
-  margin-left: 49vw;
+  float: right;
+  width: 125px;
 }
 button.submit-btn:hover {
   background: #87CEFA;
