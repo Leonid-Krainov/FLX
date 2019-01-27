@@ -1,0 +1,179 @@
+// Write your styles here
+@mixin inputBackgroud {
+  background-color: $mainBackground;
+  border: 1px solid #607d8b;
+}
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+body {
+  font-family: $font;
+}
+
+header {
+  height: 100vh;
+  color: $headerTextColor;
+  background: no-repeat center/100% $headerBackground;
+  .top-wrapper {
+    @include flex(row);
+    justify-content: space-between;
+    div.logo img{
+      width: 300px;
+      height: 200px;
+    }
+    nav a {
+      color: $headerTextColor;
+      display: inline-block;
+      padding: 20px 125px;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      &:nth-of-type(even) {
+        border-left: 1px solid $articleBackground;
+        border-right: 1px solid $articleBackground;
+      }
+    }
+  }
+  section {
+    position: absolute;
+    top: 50%;
+    @include flex(column);
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    font-family: $font;
+    text-transform: uppercase;
+    a {
+      display: block;
+      background: $buttonColor;
+      text-decoration: none;
+      color: #ffffff;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 15px;
+    }
+  }
+}
+
+main {
+  background-color: $mainBackground;
+  padding: 30px 300px;
+  @include flex(column);
+  color: $mainTextColor;
+  .toolbar {
+    margin-right: 10px;
+    align-self: flex-end;
+    input {
+      padding: 10px 20px;
+      @include inputBackgroud;
+    }
+  }
+  .post-list {
+    h1 {
+      text-align: end;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 0px;
+    }
+    article {
+      @include flex(row);
+      padding: 10px;
+      background-color: $articleBackground;
+      margin-bottom: 20px;
+      div {
+        @include flex(column);
+        .post {
+        padding: 10px;
+          div {
+          padding-bottom: 10px;
+          color: $articleDateColor;
+          border-bottom: 1px solid #607d8b;
+          }
+          h3 {
+            text-transform: uppercase;
+            color: $articleHeader;
+            margin-bottom: 0px;
+          }
+          p {
+            line-height: 25px;
+          }
+        }
+        button {
+          align-self: flex-end;
+          margin-right: 10px;
+          width: 200px;
+          height: 40px;
+          background-color: $buttonColor;
+          border: none;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+      
+    }
+  }
+  .about {
+    padding: 10px;
+    color: $mainTextColor;
+    h1 {
+      text-align: end;
+      text-transform: uppercase;
+    }
+    p {
+      line-height: 25px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .contact-form {
+    text-align: end;
+    h4 {
+      text-transform: uppercase;
+    }
+    .contact-us {
+      width: 100%;
+      color: $articleHeader;
+      .user {
+        @include flex(row);
+        margin-bottom: 20px;
+        div {
+          flex-grow: 1;
+          &:first-of-type {
+            margin-right: 10px;
+          }
+          input {
+            width: 100%;
+            line-height: 25px;
+            @include inputBackgroud;
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        margin-right: 10px;
+        @include inputBackgroud;
+      }
+      div.input input{
+          width: 200px;
+          height: 40px;
+          background-color: $buttonColor;
+          border: none;
+          color: #ffffff;
+          text-transform: uppercase;
+          margin-right: -5px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $mainBackground;
+  padding: 10px;
+}

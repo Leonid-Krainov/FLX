@@ -1,0 +1,142 @@
+body {
+  font-family: "Noto Serif", serif; }
+
+header {
+  height: 100vh;
+  color: #f05722;
+  background: no-repeat center/100% url("../img/header_background_v2.jpg"); }
+  header .top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .top-wrapper div.logo img {
+      width: 300px;
+      height: 200px; }
+    header .top-wrapper nav a {
+      color: #f05722;
+      display: inline-block;
+      padding: 20px 125px;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none; }
+      header .top-wrapper nav a:nth-of-type(even) {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff; }
+  header section {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Noto Serif", serif;
+    text-transform: uppercase; }
+    header section a {
+      display: block;
+      background: #000099;
+      text-decoration: none;
+      color: #ffffff;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 15px; }
+
+main {
+  background-color: #efefef;
+  padding: 30px 300px;
+  display: flex;
+  flex-direction: column;
+  color: #757575; }
+  main .toolbar {
+    margin-right: 10px;
+    align-self: flex-end; }
+    main .toolbar input {
+      padding: 10px 20px;
+      background-color: #efefef;
+      border: 1px solid #607d8b; }
+  main .post-list h1 {
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0px; }
+  main .post-list article {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px; }
+    main .post-list article div {
+      display: flex;
+      flex-direction: column; }
+      main .post-list article div .post {
+        padding: 10px; }
+        main .post-list article div .post div {
+          padding-bottom: 10px;
+          color: #bdcbdf;
+          border-bottom: 1px solid #607d8b; }
+        main .post-list article div .post h3 {
+          text-transform: uppercase;
+          color: #607d9e;
+          margin-bottom: 0px; }
+        main .post-list article div .post p {
+          line-height: 25px; }
+      main .post-list article div button {
+        align-self: flex-end;
+        margin-right: 10px;
+        width: 200px;
+        height: 40px;
+        background-color: #000099;
+        border: none;
+        color: #ffffff;
+        text-transform: uppercase; }
+  main .about {
+    padding: 10px;
+    color: #757575; }
+    main .about h1 {
+      text-align: end;
+      text-transform: uppercase; }
+    main .about p {
+      line-height: 25px; }
+    main .about img {
+      width: 100%; }
+  main .contact-form {
+    text-align: end; }
+    main .contact-form h4 {
+      text-transform: uppercase; }
+    main .contact-form .contact-us {
+      width: 100%;
+      color: #607d9e; }
+      main .contact-form .contact-us .user {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px; }
+        main .contact-form .contact-us .user div {
+          flex-grow: 1; }
+          main .contact-form .contact-us .user div:first-of-type {
+            margin-right: 10px; }
+          main .contact-form .contact-us .user div input {
+            width: 100%;
+            line-height: 25px;
+            background-color: #efefef;
+            border: 1px solid #607d8b; }
+      main .contact-form .contact-us textarea {
+        width: 100%;
+        margin-right: 10px;
+        background-color: #efefef;
+        border: 1px solid #607d8b; }
+      main .contact-form .contact-us div.input input {
+        width: 200px;
+        height: 40px;
+        background-color: #000099;
+        border: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-right: -5px; }
+
+footer {
+  background-color: #efefef;
+  padding: 10px; }
