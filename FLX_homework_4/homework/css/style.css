@@ -1,0 +1,205 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header {
+  width: 100%;
+  height: 90vh;
+  background: url(../img/sample2.jpg) no-repeat center bottom;
+  background-size: cover;
+  color: #FFFFFF;
+}
+header .loginLine {
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.login a {
+  margin: 1vw;
+}
+header h1 {
+  text-align: center;
+  margin-top: 30vh;
+  font-size: 6vh;
+  line-height: 2vh;
+  font-weight: normal;  
+}
+header h1 span{  
+  font-size: 10vh;
+}
+header h5 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 2vh;
+}
+header nav {
+  margin-top: 9vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav button {
+  color: #FFFFFF;
+  width: 15vw;
+  height: 5vh;
+  background-color:#00000070;
+}
+
+main .preview {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  margin-top: -1px;
+  background-color: #F3F3F3;
+}
+.preview .triangle {
+  width: 0;
+  height: 0;
+  border-top: 20vh solid black;
+  border-left: 100vw solid transparent;
+}
+.preview p {
+  color: #FFFFFF;
+  z-index: 1;
+  position: relative;
+  margin-top: -18vh;
+  margin-left: 51vw;
+}
+.preview h4 {
+  margin: 0vh 60vw 3vh 3vw;
+}
+.preview h4 b {
+  font-weight: bolder;
+}
+article {
+  text-align: center;
+  background-color: #F3F3F3;
+}
+article h3 {
+  margin-top: 0%;
+}
+article h3 b {
+  font-weight: bolder;
+}
+.southFrance {
+  background-image: url(../img/sample.jpg);
+  background-size: cover;
+  width: 40vw;
+  height: 20vh;
+  margin: 3%;
+  float: left;
+}
+.southFrance input {
+  position: relative;
+  margin-top: 2%;
+  margin-left: 85%;
+  background-color:#00000070;
+  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  padding: 1% 2%;
+}
+.southFrance p {
+  color: #FFF;
+  position: relative;
+  margin-top: 13vh;
+  margin-right: 20vw;
+}
+.featureArticle {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+section.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.articles .article {
+  width: 20vw;
+  box-shadow: 1px 1px 1px 1px #E8E8E8;
+  padding: 2%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.article button {
+  height: 3vh;
+  color: #FFFFFF;
+  background-color: #097774;
+  border: none;
+}
+section.subscribe {
+  background: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+.subscribe form {
+  align-self: flex-end;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.subscribe form input {
+  height: 20px;
+  margin: 5px;
+}
+form input.submit {
+  font-size: 2vh;
+  color: #FFFFFF;
+  background-color: #097774;
+  border: none;
+  height: 3vh;
+}
+footer {
+  padding: 2% 1% 0% 1%;
+}
+footer .conclusion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.conclusion div {
+  margin: 1%;
+}
+.conclusion div p {
+  color: #9E9E9E;
+  font-size: 12px;
+}
+.conclusion div h6{
+  color: #E8E8E8;
+}
+.conclusion .newsletter {
+  margin-left: 10%;
+  justify-content: flex-end;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+}
+.newsletter form input{
+  padding: 1%;
+  margin-left: 1%;
+  border: 1px solid black;
+}
+.newsletter form input#send {
+  color: #FFFFFF;
+  background-color: #097774;
+  border: none;
+  padding: 2px;
+}
+.footerBar {
+  color: #9E9E9E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerNav a {
+  color: #000000;
+  margin: 10px;
+}
