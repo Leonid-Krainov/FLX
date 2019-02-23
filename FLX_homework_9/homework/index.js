@@ -75,7 +75,7 @@ var data = [
     "name": "George",
     "favoriteFruit": "banana"
   }
-]
+];
 
 function getAmountOfAdultPeople(data) {
   function older(el) {
@@ -83,7 +83,20 @@ function getAmountOfAdultPeople(data) {
   }
   return filterArray(data,older).length;
 }
-getAmountOfAdultPeople(data); 
+getAmountOfAdultPeople(data);
+
+function getGreenAdultBananaLovers(data) {
+  function select(el) {
+    if (el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"){
+      return el;
+    }
+  }
+  function getName (arr) {
+    return arr.name;
+  }
+  return mapArray (filterArray(data,select), getName);
+}
+getGreenAdultBananaLovers(data);
 
 function keys(obj) {
   var arr = [];
