@@ -62,7 +62,6 @@ function addEventsDragAndDrop(el) {
 
 let newLi = function (data) {
   if (document.getElementsByTagName('li').length < taskLimit) {
-    document.getElementById('notification').innerHTML = '';
     let li = document.createElement('li');
     li.setAttribute('draggable', 'true');
     addEventsDragAndDrop(li);
@@ -77,6 +76,7 @@ let newLi = function (data) {
     let iDel = li.appendChild(iDelete());
     iDel.addEventListener('click', function(){
       li.parentNode.removeChild(li);
+      document.getElementById('notification').innerHTML = '';
     });
   } else {
     document.getElementById('notification').innerHTML = 'Maximum item per list are created';
