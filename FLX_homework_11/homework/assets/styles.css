@@ -1,0 +1,36 @@
+/* Your styles goes here */
+
+#root {
+  border:1px solid black;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 1%;
+}
+.input {
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 1%;
+}
+.input input {
+  width: 100%;
+  margin-right: 1%;
+}
+.list img{
+  width: 5%;
+  margin: 2%;
+}
+.tasks {
+  list-style: none;
+  padding: 1%;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+li p {
+  width: 100%;
+  text-align: start;
+  margin: 0% 1%;
+}
