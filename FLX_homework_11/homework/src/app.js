@@ -64,7 +64,6 @@ let newLi = function (data) {
   if (document.getElementsByTagName('li').length < taskLimit) {
     let li = document.createElement('li');
     li.setAttribute('draggable', 'true');
-    addEventsDragAndDrop(li);
     ul.appendChild(li);
     let p = document.createElement('p');
     let iCheckBox = li.appendChild(iNotComplete());
